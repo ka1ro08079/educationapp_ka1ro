@@ -1,0 +1,1 @@
+# educationapp_ka1ro
