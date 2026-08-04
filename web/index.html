@@ -42,5 +42,21 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="flutter_bootstrap.js" async></script>
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBZ1Efm4igKW8pHS1wS-ImZnGLKZsR1RHY",
+    authDomain: "chaekjikpiti.firebaseapp.com",
+    projectId: "chaekjikpiti",
+    storageBucket: "chaekjikpiti.firebasestorage.app",
+    messagingSenderId: "615082165748",
+    appId: "1:615082165748:web:2c1401c7569cb0501125a1"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  window.firestore = getFirestore(app);
+</script>
 </body>
 </html>
